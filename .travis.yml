@@ -1,0 +1,3 @@
+language: ruby
+
+script: "ruby tests/mittwoch_beer_test.rb"

@@ -1,0 +1,13 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <ul>
+      <% mittwochs.each do |mittwoch| %>
+        <li>
+          <%= mittwoch.date %>: <%= mittwoch.venues.map(&:name).join(", ") %>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
