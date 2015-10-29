@@ -2,9 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     rack (1.6.4)
+    tilt (1.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rack
+  tilt
