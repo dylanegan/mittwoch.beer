@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Aaargh';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Aaargh.ttf');
+}
+
+@font-face {
+  font-family: 'Ostrich';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/OstrichSans-Black.otf');
+}
+
+@font-face {
+  font-family: 'Ostrich';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/ostrich-regular.ttf');
+}
+
+body {
+  color: #000;
+  font-family: 'Aaargh';
+  margin: 0 auto;
+  width: 800px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  padding-top: 15px;
+}
+
+header h1 {
+  font-family: 'Ostrich';
+  font-weight: 900;
+  font-size: 72pt;
+
+  margin: 0;
+}
+
+.mittwochs-status {
+  font-family: 'Ostrich';
+  font-weight: 900;
+  font-size: 32pt;
+
+  background-color: #999;
+  color: #FFF;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.mittwochs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.mittwoch {
+  -webkit-flex-basis: 45%;
+  flex-basis: 45%;
+
+  border: 2px solid #999;
+  margin-bottom: 6%;
+  padding: 6px;
+}
+
+.mittwoch:nth-child(2n+1) {
+  margin-right: 6%;
+}
+
+.mittwoch h4 {
+  border-bottom: 1px solid #999;
+  font-family: 'Ostrich';
+  font-size: 20pt;
+  margin: 0 0 6px 0;
+}

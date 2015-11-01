@@ -7,10 +7,30 @@ module MittwochBeer
   Mittwoch = Struct.new(:date, :venues)
   Venue = Struct.new(:id, :name, :foursquare_id, :untappd_id)
 
-  def self.mittwochs
-    @mittwochs ||= json("mittwochs").map do |mittwoch|
-      Mittwoch.new(mittwoch["date"], venues_for(mittwoch["venues"]))
+  class MittwochProxy < Array
+    def previous
+      @previous ||= self.select { |mittwoch| mittwoch.date < Date.today }
     end
+
+    def today
+      @today ||= self.select { |mittwoch| mittwoch.date == Date.today }
+    end
+
+    def upcoming
+      @upcoming ||= self.select { |mittwoch| mittwoch.date > Date.today }
+    end
+  end
+
+  def self.mittwochs
+    return @mittwochs if @mittwochs
+
+    @mittwochs = MittwochProxy.new
+
+    json("mittwochs").each do |mittwoch|
+      @mittwochs << Mittwoch.new(Date.parse(mittwoch["date"]), venues_for(mittwoch["venues"]))
+    end
+
+    @mittwochs
   end
 
   def self.renderer(template, locals = {})
