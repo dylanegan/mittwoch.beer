@@ -1,5 +1,3 @@
-## mittwoch.beer
+![](https://github.com/dylanegan/mittwoch.beer/raw/master/assets/readme.png)
 
-![](https://github.com/dylanegan/mittwoch.beer/raw/master/assets/logo.png)
-
-Every Wednesday. People. Beer. Conversation.
+Jedes Mittwoch. Craft-Bier Bars.
