@@ -1,0 +1,53 @@
+@media screen and (max-width: 991px) {
+  body {
+  }
+
+  header h1 {
+    font-size: 64pt;
+  }
+
+  .mittwochs-status {
+    font-size: 24pt;
+  }
+
+  .mittwoch h4 {
+    font-size: 16pt;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  header h1 {
+    font-size: 110pt;
+  }
+
+  .mittwochs-status {
+    font-size: 32pt;
+  }
+
+  .mittwochs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .mittwoch {
+    -webkit-flex-basis: 45%;
+    flex-basis: 45%;
+  }
+
+  .mittwoch:nth-child(2n+1) {
+    margin-right: 6%;
+  }
+
+  .mittwoch h4 {
+    font-size: 20pt;
+  }
+}
