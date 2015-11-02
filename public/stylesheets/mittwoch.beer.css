@@ -38,7 +38,7 @@ header {
 header h1 {
   font-family: 'Ostrich';
   font-weight: 900;
-  font-size: 72pt;
+  font-size: 110pt;
 
   margin: 0;
 }
@@ -92,4 +92,36 @@ header h1 {
   font-family: 'Ostrich';
   font-size: 20pt;
   margin: 0 0 6px 0;
+}
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  align-items: baseline;
+
+  border-top: 2px solid #999;
+}
+
+footer .social {
+  width: 20%;
+  padding-top: 65px;
+}
+
+footer .social a:hover img {
+  opacity: 0.5;
+}
+
+footer .social .twitter {
+  height: 60px;
+}
+
+footer .logo {
+  width: 80%;
+  text-align: right;
+}
+
+footer .logo img {
+  height: 130px;
 }

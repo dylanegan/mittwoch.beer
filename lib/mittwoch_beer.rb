@@ -5,7 +5,7 @@ require "tilt"
 
 module MittwochBeer
   Mittwoch = Struct.new(:date, :venues)
-  Venue = Struct.new(:id, :name, :foursquare_id, :untappd_id)
+  Venue = Struct.new(:id, :name, :foursquare_id, :untappd_id, :url)
 
   class MittwochProxy < Array
     def previous
@@ -39,7 +39,7 @@ module MittwochBeer
 
   def self.venues
     @venues ||= json("venues").map do |venue|
-      Venue.new(venue["id"], venue["name"], venue["foursquare_id"], venue["untappd_id"])
+      Venue.new(venue["id"], venue["name"], venue["foursquare_id"], venue["untappd_id"], venue["url"])
     end
   end
 

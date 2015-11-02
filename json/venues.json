@@ -2,20 +2,24 @@
   "id": 1,
   "name": "Vagabund Brauerei",
   "foursquare_id": "51e828d9498ee9d071504660",
-  "untappd_id": 879298
+  "untappd_id": 879298,
+  "url": "http://www.vagabundbrauerei.com/the-taproom"
 }, {
   "id": 2,
   "name": "LagerLager",
   "foursquare_id": "561bebfd498e206396f53e59",
-  "untappd_id": null
+  "untappd_id": null,
+  "url": "http://www.lagerlagerberlin.de"
 }, {
   "id": 3,
   "name": "Hopfenreich",
   "foursquare_id": "5362505e498efd2c40fcc0b5",
-  "untappd_id": 1584618
+  "untappd_id": 1584618,
+  "url": "http://hopfenreich.de"
 }, {
   "id": 4,
   "name": "Dolden Mädel",
   "foursquare_id": "5604326e498e3a95f6711614",
-  "untappd_id": 3638360
+  "untappd_id": 3638360,
+  "url": "http://doldenmaedel.de"
 }]
