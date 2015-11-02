@@ -41,10 +41,10 @@
       </div>
     <% end %>
 
-    <% if mittwochs.previous.any? %>
-      <h3 class="mittwochs-status mittwochs-status-previous">Previous</h3>
+    <% if mittwochs.previously.any? %>
+      <h3 class="mittwochs-status mittwochs-status-previously">Previously</h3>
       <div class="mittwochs">
-        <% mittwochs.previous.each do |mittwoch| %>
+        <% mittwochs.previously.each do |mittwoch| %>
           <div class="mittwoch">
             <h4><%= mittwoch.date.strftime("%B %e, %Y") %></h4>
             <% mittwoch.venues.each do |venue| %>

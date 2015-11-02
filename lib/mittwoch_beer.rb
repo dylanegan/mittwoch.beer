@@ -8,8 +8,12 @@ module MittwochBeer
   Venue = Struct.new(:id, :name, :foursquare_id, :untappd_id, :url)
 
   class MittwochProxy < Array
-    def previous
-      @previous ||= self.select { |mittwoch| mittwoch.date < Date.today }
+    def previously
+      @previously ||= self.select { |mittwoch| mittwoch.date < Date.today }
+    end
+
+    def sorted
+      MittwochProxy.new(self.sort { |a, b| b.date <=> a.date })
     end
 
     def today
@@ -30,7 +34,7 @@ module MittwochBeer
       @mittwochs << Mittwoch.new(Date.parse(mittwoch["date"]), venues_for(mittwoch["venues"]))
     end
 
-    @mittwochs
+    @mittwochs.sorted
   end
 
   def self.renderer(template, locals = {})
