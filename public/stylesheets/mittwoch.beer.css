@@ -110,6 +110,11 @@ footer .social .twitter {
   height: 60px;
 }
 
+footer .social .facebook {
+  height: 47px;
+  padding-bottom: 7px;
+}
+
 footer .logo {
   width: 80%;
   text-align: right;
