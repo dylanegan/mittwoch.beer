@@ -12,13 +12,6 @@
   src: url('/fonts/OstrichSans-Black.otf');
 }
 
-@font-face {
-  font-family: 'Ostrich';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/fonts/ostrich-regular.ttf');
-}
-
 body {
   color: #000;
   font-family: 'Aaargh';
