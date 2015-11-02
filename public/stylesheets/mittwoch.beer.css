@@ -48,10 +48,21 @@ header h1 {
   font-weight: 900;
   font-size: 32pt;
 
-  background-color: #999;
   color: #FFF;
   margin-bottom: 10px;
   padding: 10px;
+}
+
+.mittwochs-status-today {
+  background-color: #55AA55;
+}
+
+.mittwochs-status-upcoming {
+  background-color: #407F7F;
+}
+
+.mittwochs-status-previous {
+  background-color: #D46A6A;
 }
 
 .mittwochs {

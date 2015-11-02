@@ -13,7 +13,7 @@
     </header>
 
     <% if mittwochs.today.any? %>
-      <h3 class="mittwochs-status">Today</h3>
+      <h3 class="mittwochs-status mittwochs-status-today">Today</h3>
       <div class="mittwochs">
         <% mittwochs.today.each do |mittwoch| %>
           <div class="mittwoch">
@@ -27,7 +27,7 @@
     <% end %>
 
     <% if mittwochs.upcoming.any? %>
-      <h3 class="mittwochs-status">Upcoming</h3>
+      <h3 class="mittwochs-status mittwochs-status-upcoming">Upcoming</h3>
       <div class="mittwochs">
         <% mittwochs.upcoming.each do |mittwoch| %>
           <div class="mittwoch">
@@ -41,7 +41,7 @@
     <% end %>
 
     <% if mittwochs.previous.any? %>
-      <h3 class="mittwochs-status">Previous</h3>
+      <h3 class="mittwochs-status mittwochs-status-previous">Previous</h3>
       <div class="mittwochs">
         <% mittwochs.previous.each do |mittwoch| %>
           <div class="mittwoch">
