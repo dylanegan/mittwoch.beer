@@ -18,7 +18,10 @@
       <div class="mittwochs">
         <% mittwochs.today.each do |mittwoch| %>
           <div class="mittwoch">
-            <h4><%= mittwoch.date.strftime("%B %e, %Y") %></h4>
+            <h4>
+              <%= mittwoch.date.strftime("%B %e, %Y") %>
+              <small>@ <%= mittwoch.time %></small>
+            </h4>
             <% mittwoch.venues.each do |venue| %>
               <a href="<%= venue.url %>"><%= venue.name %></a><br />
             <% end %>
@@ -32,7 +35,10 @@
       <div class="mittwochs">
         <% mittwochs.upcoming.each do |mittwoch| %>
           <div class="mittwoch">
-            <h4><%= mittwoch.date.strftime("%B %e, %Y") %></h4>
+            <h4>
+              <%= mittwoch.date.strftime("%B %e, %Y") %>
+              <small>@ <%= mittwoch.time %></small>
+            </h4>
             <% mittwoch.venues.each do |venue| %>
               <a href="<%= venue.url %>"><%= venue.name %></a><br />
             <% end %>
@@ -46,7 +52,10 @@
       <div class="mittwochs">
         <% mittwochs.previously.each do |mittwoch| %>
           <div class="mittwoch">
-            <h4><%= mittwoch.date.strftime("%B %e, %Y") %></h4>
+            <h4>
+              <%= mittwoch.date.strftime("%B %e, %Y") %>
+              <small>@ <%= mittwoch.time %></small>
+            </h4>
             <% mittwoch.venues.each do |venue| %>
               <a href="<%= venue.url %>"><%= venue.name %></a><br />
             <% end %>
@@ -55,7 +64,7 @@
       </div>
     <% end %>
 
-    <footer>
+    <footer class="mittwoch-beer-footer">
       <div class="social">
         <a href="https://twitter.com/mittwochbeer"><img class="twitter" src="/images/twitter.png"></a>
         <a href="https://facebook.com/mittwochbeer"><img class="facebook" src="/images/facebook.png"></a>

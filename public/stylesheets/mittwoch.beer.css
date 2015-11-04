@@ -8,6 +8,13 @@
 @font-face {
   font-family: 'Ostrich';
   font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/ostrich-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Ostrich';
+  font-style: normal;
   font-weight: 900;
   src: url('/fonts/OstrichSans-Black.otf');
 }
@@ -56,19 +63,24 @@ header h1 {
 }
 
 .mittwoch {
-
   border: 2px solid #999;
   margin-bottom: 6%;
   padding: 6px;
 }
 
 .mittwoch h4 {
+  margin: 0 0 6px 0;
+
   border-bottom: 1px solid #999;
   font-family: 'Ostrich';
-  margin: 0 0 6px 0;
 }
 
-footer {
+.mittwoch h4 small {
+  font-family: 'Ostrich';
+  font-weight: normal;
+}
+
+.mittwoch-beer-footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -78,29 +90,29 @@ footer {
   border-top: 2px solid #999;
 }
 
-footer .social {
+.mittwoch-beer-footer .social {
   width: 50%;
   padding-top: 65px;
 }
 
-footer .social a:hover img {
+.mittwoch header a:hover img, .mittwoch-beer-footer .social a:hover img {
   opacity: 0.5;
 }
 
-footer .social .twitter {
+.mittwoch-beer-footer .social .twitter {
   height: 60px;
 }
 
-footer .social .facebook {
+.mittwoch-beer-footer .social .facebook {
   height: 47px;
   padding-bottom: 7px;
 }
 
-footer .logo {
+.mittwoch-beer-footer .logo {
   width: 50%;
   text-align: right;
 }
 
-footer .logo img {
+.mittwoch-beer-footer .logo img {
   height: 130px;
 }

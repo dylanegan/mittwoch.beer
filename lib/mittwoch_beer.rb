@@ -4,7 +4,7 @@ require "erb"
 require "tilt"
 
 module MittwochBeer
-  Mittwoch = Struct.new(:date, :venues)
+  Mittwoch = Struct.new(:date, :time, :venues)
   Venue = Struct.new(:id, :name, :foursquare_id, :untappd_id, :url)
 
   class MittwochProxy < Array
@@ -31,7 +31,7 @@ module MittwochBeer
     @mittwochs = MittwochProxy.new
 
     json("mittwochs").each do |mittwoch|
-      @mittwochs << Mittwoch.new(Date.parse(mittwoch["date"]), venues_for(mittwoch["venues"]))
+      @mittwochs << Mittwoch.new(Date.parse(mittwoch["date"]), (mittwoch["time"] || "19:00"), venues_for(mittwoch["venues"]))
     end
 
     @mittwochs.sorted
