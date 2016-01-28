@@ -1,37 +1,41 @@
 [{
   "date": "2015-10-21",
   "time": null,
-  "venues": [1]
+  "venue_ids": [1]
 }, {
   "date": "2015-10-28",
   "time": null,
-  "venues": [2, 3]
+  "venue_ids": [2, 3]
 }, {
   "date": "2015-11-04",
   "time": null,
-  "venues": [4]
+  "venue_ids": [4]
 }, {
   "date": "2015-11-11",
   "time": null,
-  "venues": [5]
+  "venue_ids": [5]
 }, {
   "date": "2015-11-18",
   "time": null,
-  "venues": [6]
+  "venue_ids": [6]
 }, {
   "date": "2015-11-25",
   "time": null,
-  "venues": [7]
+  "venue_ids": [7]
 }, {
   "date": "2015-12-02",
   "time": null,
-  "venues": [8]
+  "venue_ids": [8]
 }, {
   "date": "2015-12-09",
   "time": "19:30",
-  "venues": [9]
+  "venue_ids": [9]
 }, {
   "date": "2015-12-16",
   "time": "18:30",
-  "venues": [10]
+  "venue_ids": [10]
+}, {
+  "date": "2016-02-03",
+  "time": "19:30",
+  "venue_ids": [11]
 }]
